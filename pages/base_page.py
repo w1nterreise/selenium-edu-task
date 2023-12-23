@@ -12,7 +12,7 @@ from .helpers import *
 
 class BasePage():
 
-    def __init__(self, browser, uri=None, timeout=4):
+    def __init__(self, browser, uri=None, timeout=12):
         self.browser = browser
         self.uri = browser.current_url if uri is None else uri
         self.browser.implicitly_wait(timeout)
